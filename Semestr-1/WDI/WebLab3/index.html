@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    
+<h1>Formularz</h1>
+
+  <form id="formularz">
+    <fieldset>
+      <legend>Dane osobowe</legend>
+
+      <div>
+        <label for="imie">Imię:</label>
+        <input id="imie" name="imie" type="text" required/>
+      </div>
+
+      <div>
+        <label for="nazwisko">Nazwisko:</label>
+        <input id="nazwisko" name="nazwisko" type="text" required/>
+      </div>
+
+      <div>
+        <label for="data_ur">Data urodzenia:</label>
+        <input id="data_ur" name="data_ur" type="date" required/>
+      </div>
+
+      <div>
+        <span>Płeć:</span>
+        <div>
+          <input id="plec_k" name="plec" type="radio" value="k"/>
+          <label for="plec_k">k</label>
+          <input id="plec_m" name="plec" type="radio" value="m"/>
+          <label for="plec_m">m</label>
+        </div>
+      </div>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Adres</legend>
+
+      <div>
+        <label for="nr_domu">Nr domu:</label>
+        <input id="nr_domu" name="nr_domu" type="number" required min="1" step="1"/>
+      </div>
+
+      <div>
+        <label for="nr_lokalu">Nr lokalu (opcjonalnie):</label>
+        <input id="nr_lokalu" name="nr_lokalu" type="number" min="1" step="1"/>
+      </div>
+
+      <div>
+        <label for="kod_poczt">Kod pocztowy:</label>
+        <input id="kod_poczt" name="kod_poczt" type="text" required placeholder="12-345" pattern="[0-9]{2}-[0-9]{3}"/>
+        <small>Format: 12-345</small>
+      </div>
+
+      <div>
+        <label for="miasto">Miasto:</label>
+        <input id="miasto" name="miasto" type="text" required/>
+      </div>
+
+      <div>
+        <label for="wojewodztwo">Województwo:</label>
+        <select id="wojewodztwo" name="wojewodztwo" required>
+          <option value="">--- wybierz ---</option>
+          <option value="1">Dolnośląskie</option>
+          <option value="2">Kujawsko-Pomorskie</option>
+          <option value="3">Lubelskie</option>
+          <option value="4">Lubuskie</option>
+          <option value="5">Łódzkie</option>
+          <option value="6">Małopolskie</option>
+          <option value="7">Mazowieckie</option>
+          <option value="8">Opolskie</option>
+          <option value="9">Podkarpackie</option>
+          <option value="10">Podlaskie</option>
+          <option value="11">Pomorskie</option>
+          <option value="12">Śląskie</option>
+          <option value="13">Świętokrzyskie</option>
+          <option value="14">Warmińsko-Mazurskie</option>
+          <option value="15">Wielkopolskie</option>
+          <option value="16">Zachodniopomorskie</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="email">E-mail:</label>
+        <input id="email" name="email" type="email" required/>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Hobby</legend>
+
+      <div>
+        <div>
+          <input type="checkbox" name="hobby" value="sport"/>
+          <label for="hb1"><img src="grafika/sport.jpg" alt="sport" class="hb"> Sport</label>
+        </div>
+        <div>
+          <input type="checkbox" name="hobby" value="muzyka"/>
+          <label for="hb2"><img src="grafika/muzyka.jpg" alt="muzyka" class="hb"> Muzyka</label>
+        </div>
+        <div>
+          <input type="checkbox" name="hobby" value="ksiazki"/>
+          <label for="hb3"><img src="grafika/ksiazki.jpg" alt="książki" class="hb"> Książki</label>
+        </div>
+        <div>
+          <input type="checkbox" name="hobby" value="film"/>
+          <label for="hb4"><img src="grafika/filmy.jpg" alt="filmy" class="hb"> Filmy</label>
+        </div>
+      </div>
+    </fieldset>
+
+    <div>
+      <button type="submit">Wyślij</button>
+      <button type="reset">Wyczyść formularz</button>
+    </div>
+  </form>
+
+</body>
+</html>

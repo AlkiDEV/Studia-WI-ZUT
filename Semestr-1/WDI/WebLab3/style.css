@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+label{
+  display: inline-block;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+
+select:invalid {
+  border-color: red;
+}
+select:valid {
+  border-color: green;
+}
+
+input[type="email"]:valid{
+  border-color: green;
+}
+input[type="email"]:invalid{
+  border-color: red;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: green;
+}
+
+.hb{
+  width: 128px;
+  height: 128px;
+  margin: 5px;
+}

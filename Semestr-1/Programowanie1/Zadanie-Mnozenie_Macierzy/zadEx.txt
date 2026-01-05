@@ -1,0 +1,16 @@
+Format pliku txt:
+
+3 3\n			- wiersze x kolumny
+2 3 5\n			- wiersz 1
+4 6 1\n			- wiersz 2
+2 8 9\n			- wiersz 3
+
+
+Clean Code !!!
+DRY
+YAGNI
+KISS
+Bez wycieków pamięci
+
+Generator macierzy można z neta.
+
