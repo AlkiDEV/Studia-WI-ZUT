@@ -8,7 +8,6 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-// #include <time.h>
 
 FILE *openFile(const char *path, const char *mode)
 {
